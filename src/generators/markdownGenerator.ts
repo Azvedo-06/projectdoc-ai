@@ -7,6 +7,7 @@ export function generateMarkdown(
   modules: string[],
   architecture: string[],
   businessRules: string[],
+  c4Suggestion: string,
   aiAnalysis: string,
 ) {
   const content = `# Análise do Projeto
@@ -27,8 +28,12 @@ ${architecture.map((a) => `- ${a}`).join("\n")}
 
 ${businessRules.map((rule) => `- ${rule}`).join("\n")}
 
+${c4Suggestion}
+
 ## Análise com IA
 ${aiAnalysis}
+
+
 
 `;
 
