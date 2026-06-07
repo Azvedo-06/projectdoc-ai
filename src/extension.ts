@@ -9,7 +9,7 @@ import { analyzeArchitecture } from "./analysis/architectureAnalyzer";
 import { generateMarkdown } from "./generators/markdownGenerator";
 import { extractBusinessRules } from "./analysis/businessRuleAnalyzer";
 import { analyzeWithAI } from "./ai/aiBusinessAnalyzer";
-import { generateC4Suggestion } from "./analysis/c4Analyzer";
+import { generateC4 } from "./analysis/c4Analyzer";
 
 dotenv.config({
   path: path.resolve(__dirname, "../.env"),
@@ -85,7 +85,7 @@ export function activate(context: vscode.ExtensionContext) {
       const businessRules = extractBusinessRules(files);
       console.log("Regras de negócio:", businessRules);
 
-      const c4Suggestion = generateC4Suggestion(modules);
+      const c4Suggestion = generateC4(modules);
       console.log(c4Suggestion);
 
       let aiAnalysis = "";

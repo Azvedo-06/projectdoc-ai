@@ -1,71 +1,62 @@
-# projectdoc-ai README
+# ProjectDoc AI
 
-This is the README for your extension "projectdoc-ai". After writing up a brief description, we recommend including the following sections.
+## Objetivo
 
-## Features
+O ProjectDoc AI é uma extensão para VS Code capaz de analisar projetos de software e gerar documentação técnica automaticamente.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Funcionalidades
 
-For example if there is an image subfolder under your extension project workspace:
+- Análise da estrutura do projeto
+- Identificação de tecnologias
+- Identificação de módulos
+- Identificação de arquitetura
+- Extração de regras de negócio
+- Sugestão de diagramas C4
+- Geração automática de documentação técnica
 
-\!\[feature X\]\(images/feature-x.png\)
+## Como Executar
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Instalação
 
-## Requirements
+```bash
+npm install
+```
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Executar extensão
 
-## Extension Settings
+1. Abrir o projeto no VS Code.
+2. Pressionar F5.
+3. Abrir um projeto para análise.
+4. Executar:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+ProjectDoc AI: Analyze Project
 
-For example:
+### Resultado
 
-This extension contributes the following settings:
+Será gerado o arquivo:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+```text
+project-analysis.md
+```
 
-## Known Issues
+contendo a documentação técnica do sistema analisado.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## Tecnologias Utilizadas
 
-## Release Notes
+- TypeScript
+- Node.js
+- VS Code Extension API
 
-Users appreciate release notes as you update your extension.
+## Exemplo de Uso
 
-### 1.0.0
+Projeto analisado:
 
-Initial release of ...
+- ConViveMonolito
 
-### 1.0.1
+Resultado:
 
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- Tecnologias detectadas
+- Arquitetura identificada
+- Regras de negócio
+- Sugestões de diagramas C4
+- Recomendações técnicas

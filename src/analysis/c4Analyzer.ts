@@ -1,11 +1,6 @@
-export function generateC4Suggestion(
+export function generateC4(
   modules: string[],
 ): string {
-
-  const actors = [
-    "Usuário",
-    "Administrador",
-  ];
 
   return `
 ## Sugestão de Diagramas C4
@@ -13,21 +8,14 @@ export function generateC4Suggestion(
 ### Diagrama de Contexto
 
 Atores:
-${actors.map(actor => `- ${actor}`).join("\n")}
+- Usuário
+- Administrador
 
 Sistema:
-- Sistema analisado
+- Sistema Analisado
 
 ### Diagrama de Componentes
 
-Componentes:
-${modules.map(module => `- ${module} Module`).join("\n")}
-
-### Relacionamentos
-
-- Usuário → Auth Module
-- Usuário → Events Module
-- Administrador → Admin Module
-- Auth Module → Users Module
+${modules.map(m => `- ${m} Module`).join("\n")}
 `;
 }
